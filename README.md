@@ -75,20 +75,6 @@ Patterns are stored in `patterns.toml` and sourced from:
 
 Patterns can be added or updated without recompiling.
 
-## Project Structure
-prompt-shield/
-├── Cargo.toml
-├── patterns.toml          ← injection pattern library
-├── test_samples/
-│   ├── attack1_cookie_recipe.html
-│   ├── attack2_meeting_notes.txt
-│   └── attack3_data.csv
-└── src/
-├── main.rs            ← CLI entry point
-├── scanner.rs         ← detection logic
-├── cleaner.rs         ← content sanitizer
-└── reporter.rs        ← threat report output
-
 ## Why Rust?
 
 - **Memory safety** — string scanning with zero buffer overflows, guaranteed at compile time
